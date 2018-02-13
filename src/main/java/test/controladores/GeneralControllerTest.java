@@ -16,6 +16,6 @@ public class GeneralControllerTest {
         GeneralController controller = new GeneralController();
         MockMvc mockMvc = standaloneSetup(controller).build();
 
-        mockMvc.perform(get("/")).andExpect(view().name("home"));
+        mockMvc.perform(get("/")).andExpect(view().name("acceso/login"));
     }
 }
